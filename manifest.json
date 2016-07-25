@@ -1,0 +1,13 @@
+{
+"name":"Sebastopol",
+"description":"http://stackoverflow.com/questions/14068879",
+"version":"1",
+"manifest_version":2,
+"content_scripts": [
+    {
+      "matches": ["http://www.facebook.com/*","https://www.facebook.com/*"],
+      "js": ["myscript.js"],
+	  "run_at": "document_end"
+    }
+  ]
+}
