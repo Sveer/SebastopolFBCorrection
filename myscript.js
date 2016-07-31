@@ -11,6 +11,17 @@
 				  element.innerHTML = element.innerHTML.replace('Украина','Россия').replace('Ukraine','Russia');
 				}
 		};
+		elems = document.getElementsByClassName("pageCityLink" );
+		for(var i=0; i<elems.length; i++)
+                {
+                    var element = elems[i];
+				if (element.innerHTML.indexOf('Севастополь')!=-1 ||
+				element.innerHTML.indexOf('Sebastopol')!=-1 ||
+				element.innerHTML.indexOf('Sevastopol')!=-1){
+				  element.innerHTML = element.innerHTML.replace('Украина','Россия').replace('Ukraine','Russia');
+				}
+		};
+		
 	};
 	document.addEventListener('DOMSubtreeModified', funcLoad);
 	funcLoad();
